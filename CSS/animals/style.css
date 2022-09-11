@@ -1,0 +1,54 @@
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  margin: 12px 0;
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 35px;
+}
+
+main img {
+  display: block;
+}
+
+main {
+  background-color: #93572e;
+  width: 300px;
+  margin: 0 auto;
+  border-bottom: 10px solid #48230a;
+  border-radius: 30px;
+}
+
+p {
+  color: rgba(234, 228, 219, 0.781);
+  line-height: 130%;
+  font-size: 17px;
+}
+
+.animal {
+  display: block;
+  margin: 0 auto;
+  padding-top: 85px;
+  display: block;
+}
+
+.name {
+  color: white;
+}
+
+.contents {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 27px;
+}
