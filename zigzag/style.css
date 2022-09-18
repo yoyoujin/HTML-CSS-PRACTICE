@@ -1,0 +1,159 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  /*
+	font-weight: 500;
+	font-weight: 700;
+	*/
+}
+
+/* CSS Reset */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 100%;
+}
+
+/* Layouts */
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* Components */
+body {
+  background-color: #673399;
+  margin: 100px 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.main-title {
+  font-family: Montserrat;
+  font-size: 40px;
+  color: #fff;
+}
+
+.portfolio {
+  display: block;
+}
+
+.hilight {
+  width: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+.hilight::before {
+  content: ' ';
+  position: absolute;
+  background-color: #ff4500;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.5em;
+}
+
+.main-desc {
+  font-size: 14px;
+  color: #bd8fe8;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+
+.main-desc::before {
+  content: ' ';
+  width: 300px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: currentColor;
+}
+
+/* main */
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 24px;
+  background-color: #fff;
+}
+
+/* .project-list:nth-child(even) {
+  flex-direction: row-reverse;
+} */
+
+.project-title {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  font-size: 40px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.project-img {
+  opacity: 0.6;
+}
+
+.project-list::before {
+  content: ' ';
+  position: absolute;
+  background-color: purple;
+  inset: 0;
+}
+
+.project-desc {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  background-color: white;
+  flex-grow: 1;
+  padding: 24px;
+}
+
+.project-sub-title {
+  font-size: 18px;
+  color: #673399;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.project-desc p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.project-desc p:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.project-desc p::before {
+  content: ' ';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #bd8fe8;
+}
